@@ -1,0 +1,23 @@
+{
+  "name": "test101",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:calculator": "node src/index_calculator.js",
+    "start:time": "node src/index_timeUtils.js",
+    "test": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js --colors --coverage=false",
+    "test:coverage": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js --colors --coverage=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "26.6.3"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-node",
+    "transform": {}
+  }
+}
